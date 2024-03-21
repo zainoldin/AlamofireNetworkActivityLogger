@@ -27,13 +27,13 @@
 import PackageDescription
 
 let package = Package(name: "AlamofireNetworkActivityLogger",
-                      platforms: [.iOS(.v10),
-                                  .macOS(.v10_12),
-                                  .tvOS(.v10),
-                                  .watchOS(.v3)],
+                      platforms: [.macOS(.v10_13),
+                                  .iOS(.v12),
+                                  .tvOS(.v12),
+                                  .watchOS(.v4)],
                       products: [.library(name: "AlamofireNetworkActivityLogger", targets: ["AlamofireNetworkActivityLogger"])],
                       dependencies: [.package(url: "https://github.com/Alamofire/Alamofire.git",
-                                              from: "5.4.0")],
+                                              from: "5.9.0")],
                       targets: [.target(name: "AlamofireNetworkActivityLogger",
                                         dependencies: ["Alamofire"],
                                         path: "Source")],
